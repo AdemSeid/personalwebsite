@@ -44,8 +44,12 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; <span id="currentYear"></span> Adam Seid. All rights reserved.</p>
         </div>
     </footer>
+    
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
